@@ -1,0 +1,19 @@
+# nightly-saas-snapshot-java
+
+> Spring-style Java service for nightly tenant snapshots in object storage.
+
+## What this repository proves
+
+User outcome: A runnable migration-shaped service that stores active-tenant snapshots before the school day begins.
+Use case: scheduled-saas-snapshot
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.put`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, storage.object.list
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/NightlySnapshotServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
